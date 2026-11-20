@@ -14,6 +14,6 @@ jobs:
           aws-region: ap-southeast-2
       - name: code static to s3
         run: |
-          aws s3 sync ./ s3://s3Static-demo/ \
+          aws s3 sync ./ s3://s3static-demo/ \
           --exclude "*" \
           --include "index.html"
